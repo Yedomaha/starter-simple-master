@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Start</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="black">
+			<div class="logo"><img src="img/logo.png"></div>
+			<p class="ilove">i love design</p>
+			<p class="imglad">I'm glad that you visited my site where he can get to <br> know me and my work.</p>
+			<div class="yakor"><a href="#colwrapp"><img src="img/yakor.png"></div></a>
+		</div>
+		<div class="white">
+			<p class="myname">My name is Vlad Musienko, I'm a web designer. I love to draw<br> and all that is connected with the design. In this area a long time<br> ago and during this time I managed to create several successful<br> projects used by people all over the world. </p>
+			<p class="myname il2">I love the simplicity in the design of web sites. As I see it,people,<br> it's like my work. Naturally do not want to rest on our laurels and<br> will continue further studies to improve soybean skills, creating<br> new interesting creative projects.</p>
+			<p class="whatido">what i do</p>
+			<div id="colwrapp">
+				<div class="col mrgleft"><p class="title">template.</p><p>Lately, I often create templates for WordPress. The portfolio is the presentation and the opportunity to buy them on the site Themeforest.</p></div>
+				<div class="col mrgcentr"><p class="title">brand.</p><p>Creating a brand is a very complex process aimed at the creation and positioning the unique persons of the company, its products and services.</p></div>
+				<div class="col mrgright"><p class="title">dreams.</p><p>Everyone is able to destroy the dream, but not everyone is able to create it. I try to help people in its definition as a person and specialist.</p></div>
+			<div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+ 		$(document).ready(function()
+ 		{
+   		$(".yakor").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    		});
+		});
+	</script>
+</body>
+</html>
